@@ -1,0 +1,181 @@
+version=53;
+class EditorData
+{
+	moveGridStep=0.5;
+	angleGridStep=0.78539819;
+	scaleGridStep=10;
+	autoGroupingDist=10;
+	toggles=521;
+	class ItemIDProvider
+	{
+		nextID=8;
+	};
+	class Camera
+	{
+		pos[]={14550.809,35.987061,16836.416};
+		dir[]={0.61464059,-0.49396801,-0.61517006};
+		up[]={0.34915271,0.86940354,-0.34944794};
+		aside[]={-0.70750028,-3.4202531e-006,-0.70691472};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Characters_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=7780190;
+class ScenarioData
+{
+	author="=7Cav=Whitsel.M";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=4;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={14649.129,17.91,16726.279};
+			name="HUD_Halo_Infantry_HALO Chopper";
+			type="Empty";
+			colorName="ColorWhite";
+			id=2;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={14664.622,17.91,16738.363};
+			name="HUD_A1_Infantry_Weapon";
+			type="Empty";
+			colorName="ColorWEST";
+			angle=45.019989;
+			id=3;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14635.44,17.911438,16755.422};
+						angles[]={0,2.4332278,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="(group this) setGroupId [""ALPHA""];";
+						description="Alpha Squad Leader";
+						isPlayable=1;
+					};
+					id=5;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={14658.395,17.91,16729.846};
+			name="HUD_Staging_Infantry_Staging Area";
+			type="Empty";
+			colorName="ColorWhite";
+			id=6;
+		};
+	};
+};
